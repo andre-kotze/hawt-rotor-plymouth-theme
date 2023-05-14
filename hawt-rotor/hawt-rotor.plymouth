@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=HAWT Rotor
+Description=Spinning wind turbine rotor
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/hawt-rotor
+ScriptFile=/usr/share/plymouth/themes/hawt-rotor/hawt-rotor.script
+UseFirmwareBackground=false

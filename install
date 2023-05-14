@@ -18,18 +18,18 @@ fi
 
 # coping theme in /usr/share/plymouth/themes/
 echo -n "coping theme in /usr/share/plymouth/themes/   ..................   " ;
-cp -r `dirname $0`/vortex-ubuntu /usr/share/plymouth/themes/ ;
+cp -r `dirname $0`/hawt-rotor /usr/share/plymouth/themes/ ;
 if [ $? -gt 0 ]; then
-	echo -e "\nan error occoured in moving `dirname $0`/vortex-ubuntu to /usr/share/plymouth/themes/" ;
+	echo -e "\nan error occoured in moving `dirname $0`/hawt-rotor to /usr/share/plymouth/themes/" ;
 	exit 1;
 fi
 echo "[done]" ;
 
 
 
-# adding vortex-ubuntu in the list of aviable themes
+# adding hawt-rotor in the list of aviable themes
 echo -n "updating plymouth themes alternatives   ........................   " ;
-update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/vortex-ubuntu/vortex-ubuntu.plymouth 100  &> /dev/null ;
+update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/hawt-rotor/hawt-rotor.plymouth 100  &> /dev/null ;
 if [ $? -gt 0 ]; then
 	echo -e "\nan error occoured installing alternative in /usr/share/plymouth/themes/default.plymouth" ;
 	exit 1;
@@ -38,9 +38,9 @@ echo "[done]" ;
 
 
 
-# setting vortex-ubuntu as default plymouth theme;
-echo -n "setting vortex-ubuntu as default plymouth theme   ..............   " ;
-update-alternatives --set default.plymouth /usr/share/plymouth/themes/vortex-ubuntu/vortex-ubuntu.plymouth  &> /dev/null ;
+# setting hawt-rotor as default plymouth theme;
+echo -n "setting hawt-rotor as default plymouth theme   ..............   " ;
+update-alternatives --set default.plymouth /usr/share/plymouth/themes/hawt-rotor/hawt-rotor.plymouth  &> /dev/null ;
 if [ $? -gt 0 ]; then
 	echo -e "\nan error occoured setting alternative in /usr/share/plymouth/themes/default.plymouth";
 	exit 1;
@@ -60,7 +60,7 @@ echo "[done]" ;
 
 
 
-echo "vortex-ubuntu is your plymouth theme now :)" ;
+echo "hawt-rotor is your plymouth theme now :)" ;
 
 
 

@@ -16,7 +16,7 @@ if (Plymouth.GetMode () == "shutdown")
 
 s = 0.75;
 
-logo_image = Image ("logo.png");
+logo_image = Image ("rotor_376.png");
 logo_image = logo_image.Scale (120 * s , 120 * s);
 logo = Sprite (logo_image);
 logo.SetX (Window.GetWidth ()  / 2 - logo_image.GetWidth()  / 2);
@@ -28,6 +28,7 @@ static = Sprite (istatic);
 static.SetX (Window.GetWidth ()  / 2 - istatic.GetWidth()  / 2);
 static.SetY ((Window.GetHeight() * yPos) - istatic.GetHeight() / 2);
 
+/*
 ic1 = Image ("1.png");
 ic1 = ic1.Scale (ic1.GetWidth() * s ,ic1.GetHeight() * s );
 c1 = Sprite (ic1);
@@ -63,6 +64,7 @@ ic6 = ic6.Scale (ic6.GetWidth() * s ,ic6.GetHeight() * s );
 c6 = Sprite (ic6);
 c6.SetX (Window.GetWidth ()  / 2 - ic6.GetWidth()  / 2);
 c6.SetY ((Window.GetHeight() * yPos) - ic6.GetHeight() / 2);
+*/
 
 ic7 = Image ("7.png");
 ic7 = ic7.Scale (ic7.GetWidth() * s ,ic7.GetHeight() * s );
@@ -93,12 +95,15 @@ t=0;
 fun update ()
 {
     t++;
+    logo.SetImage(logo_image.Rotate(t * 0.02));
+    /*
     c1.SetImage(ic1.Rotate(t * 0.009));
     c2.SetImage(ic2.Rotate(t * 0.007));
     c3.SetImage(ic3.Rotate(t * 0.006));
     c4.SetImage(ic4.Rotate(t * 0.0053));
     c5.SetImage(ic5.Rotate(t * 0.0048));
     c6.SetImage(ic6.Rotate(t * 0.004));
+    */
     c7.SetImage(ic7.Rotate(t * 0.0035));
     c8.SetImage(ic8.Rotate(t * 0.003));
     c9.SetImage(ic9.Rotate(t * 0.0025));
