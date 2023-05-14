@@ -1,10 +1,8 @@
-# Vortex Ubuntu
+# HAWT-Rotor
 
 Animated plymouth theme with spinning horizontal-axis wind turbine (HAWT) rotor.
 
-Modified from [hawt-rotor-plymouth-theme](https://github.com/emanuele-scarsella/hawt-rotor-plymouth-theme)
-
-
+Modified from [vortex-ubuntu-plymouth-theme](https://github.com/emanuele-scarsella/hawt-rotor-plymouth-theme)
 
 ### Dependencies
 
@@ -12,21 +10,12 @@ Modified from [hawt-rotor-plymouth-theme](https://github.com/emanuele-scarsella/
 * Raccomanded: plymouth-x11
 * Install dependencies with `sudo apt install plymouth libplymouth5 plymouth-label`
 
-
-
 ### Boot up splash screen
-![boot up splash screen](https://i.imgur.com/saWDpPb.png)
+![boot up splash screen](demo_boot.png)
 ### Shutdown splash screen
-![shutdown splash screen](https://i.imgur.com/UkLr5pX.png)
-
-
-
+![shutdown splash screen](demo_shutdown.png)
 
 # Installation
-
-
-> ### NOTE: apt compatible package coming soon!
-
 
 * go to the downloaded `hawt-rotor-plymouth-theme` folder from terminal, it can be done with the following command
 ```
@@ -41,9 +30,6 @@ sudo chmod +x install
 ```
 sudo ./install
 ```
-
-
-
 
 # Test
 
@@ -60,9 +46,6 @@ sudo chmod +x show-splash.sh
 ```
 sudo ./show-splash.sh
 ```
-
-
-
 
 # Removal
 
@@ -81,9 +64,6 @@ sudo ./uninstall
 ```
 * then when asked chose the new plymouth theme by typing the number of your choice and pressing `Enter`
 
-
-
-
 # Customizing background color
 
 * open the file in `hawt-rotor/bg.png` in any image editor of your choice
@@ -93,9 +73,6 @@ sudo ./uninstall
 * save changes ensuring to NOT change neither the file name `bg.png` neither his location `hawt-rotor`
 
 * proceed to installation/reinstallation
-
-
-
 
 # Customizing background image
 
@@ -107,10 +84,6 @@ sudo ./uninstall
 
 * proceed to installation/reinstallation
 
-
-
-
 ## License
-
 
 This project is licensed under the GPL v.2 License - see the LICENSE.md file for details

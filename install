@@ -17,7 +17,7 @@ fi
 
 
 # coping theme in /usr/share/plymouth/themes/
-echo -n "coping theme in /usr/share/plymouth/themes/   ..................   " ;
+echo -n "copying theme in /usr/share/plymouth/themes/   ..................   " ;
 cp -r `dirname $0`/hawt-rotor /usr/share/plymouth/themes/ ;
 if [ $? -gt 0 ]; then
 	echo -e "\nan error occoured in moving `dirname $0`/hawt-rotor to /usr/share/plymouth/themes/" ;
@@ -31,7 +31,7 @@ echo "[done]" ;
 echo -n "updating plymouth themes alternatives   ........................   " ;
 update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/hawt-rotor/hawt-rotor.plymouth 100  &> /dev/null ;
 if [ $? -gt 0 ]; then
-	echo -e "\nan error occoured installing alternative in /usr/share/plymouth/themes/default.plymouth" ;
+	echo -e "\nan error occurred installing alternative in /usr/share/plymouth/themes/default.plymouth" ;
 	exit 1;
 fi
 echo "[done]" ;
@@ -42,7 +42,7 @@ echo "[done]" ;
 echo -n "setting hawt-rotor as default plymouth theme   ..............   " ;
 update-alternatives --set default.plymouth /usr/share/plymouth/themes/hawt-rotor/hawt-rotor.plymouth  &> /dev/null ;
 if [ $? -gt 0 ]; then
-	echo -e "\nan error occoured setting alternative in /usr/share/plymouth/themes/default.plymouth";
+	echo -e "\nan error occurred setting alternative in /usr/share/plymouth/themes/default.plymouth";
 	exit 1;
 fi
 echo "[done]" ;
@@ -53,7 +53,7 @@ echo "[done]" ;
 echo -n "updating Initial RAM File System   .............................   " ;
 update-initramfs -u &> /dev/null ;
 if [ $? -gt 0 ]; then
-	echo -e "\nan error occoured executing \"update-initramfs -u\"";
+	echo -e "\nan error occurred executing \"update-initramfs -u\"";
 	exit 1;
 fi
 echo "[done]" ;
