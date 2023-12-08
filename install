@@ -39,7 +39,7 @@ echo "[done]" ;
 
 
 # setting hawt-rotor as default plymouth theme;
-echo -n "setting hawt-rotor as default plymouth theme   ..............   " ;
+echo -n "setting hawt-rotor as default plymouth theme   .................   " ;
 update-alternatives --set default.plymouth /usr/share/plymouth/themes/hawt-rotor/hawt-rotor.plymouth  &> /dev/null ;
 if [ $? -gt 0 ]; then
 	echo -e "\nan error occurred setting alternative in /usr/share/plymouth/themes/default.plymouth";

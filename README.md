@@ -1,4 +1,4 @@
-# HAWT-Rotor
+# HAWT-Rotor Plymouth Theme
 
 Animated plymouth theme with spinning horizontal-axis wind turbine (HAWT) rotor.
 
@@ -7,7 +7,7 @@ Modified from [vortex-ubuntu-plymouth-theme](https://github.com/emanuele-scarsel
 ### Dependencies
 
 * plymouth, libplymouth5, plymouth-label
-* Raccomanded: plymouth-x11
+* Recommended: plymouth-x11
 * Install dependencies with `sudo apt install plymouth libplymouth5 plymouth-label`
 
 ### Boot up splash screen
@@ -70,7 +70,7 @@ sudo ./uninstall
 
 * fill the image with the color you want as background
 
-* save changes ensuring to NOT change neither the file name `bg.png` neither his location `hawt-rotor`
+* save changes ensuring NOT to change the file name `bg.png` or its location `hawt-rotor`
 
 * proceed to installation/reinstallation
 
